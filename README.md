@@ -1,41 +1,66 @@
 # OS Project - Final Version
 
-This is the completed final assignment version for the OS project.
+This repository contains the final completed version of the OS project assignment.
+The project is built with React and Vite and includes several required features related to API usage, real-time updates, user preferences, and browser-based system information.
 
-## Implemented tasks
+## Implemented Features
 
-- **News App**: fetches 10 comments from the API and displays loading and error states.
-- **Gallery App**: fetches 12 photos from the API and displays loading and error states.
-- **Live Clock**: shows the current date and time in `M/D/YYYY - HH:mm:ss` format and updates every second.
-- **Dark Mode**: light/dark theme toggle inside Preferences, saved in `localStorage`, with system preference detection on first visit.
-- **Battery Indicator**: shows the real battery level when supported by the browser, with fallback text when not supported.
+### News App
 
-## Technologies used
+The News App fetches 10 comments from the JSONPlaceholder API and displays them in the application.
+It also includes loading and error handling states to improve the user experience.
 
-- React
-- TypeScript
-- Vite
-- Tailwind CSS
-- React Query
-- Axios
+### Gallery App
 
-## How to run
+The Gallery App fetches 12 photos from the API and displays them in a gallery layout.
+Loading and error states are also implemented for better feedback during data fetching.
+
+### Live Clock
+
+The Live Clock displays the current date and time in the following format:
+
+```text
+M/D/YYYY - HH:mm:ss
+```
+
+The time updates automatically every second.
+
+### Dark Mode
+
+The application includes a light and dark theme toggle inside the Preferences section.
+The selected theme is saved in `localStorage`, and the system preference is detected on the first visit.
+
+### Battery Indicator
+
+The Battery Indicator displays the real battery level when the browser supports the Battery Status API.
+If the browser does not support this feature, a fallback message is shown.
+
+## Technologies Used
+
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
+* React Query
+* Axios
+
+## How to Run the Project
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+## Build the Project
 
 ```bash
 npm run build
 ```
 
-## API configuration
+## API Configuration
 
-The API base URL is set in `.env` / `.env.example`:
+The API base URL is configured in the `.env` and `.env.example` files:
 
-```text
+```env
 VITE_API_URL=https://jsonplaceholder.typicode.com
 ```
